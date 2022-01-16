@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Home.module.css'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import Card from '../../components/shared/Card/Card'
 import Button from '../../components/shared/Button/Button'
 
@@ -13,6 +13,12 @@ const Home = () => {
         textDecoration: 'none',
         marginLeft: '10px'
     }
+
+const history = useHistory();
+function startRegister() {
+    history.push('/register');
+}
+
     return (
         <div className={styles.cardWrapper}>
             <Card title="Welcome to Codershouse!" icon="logo">
@@ -23,7 +29,7 @@ const Home = () => {
                 </p>
 
                 <div>
-                    <Button text='Get your Username'/>
+                    <Button onClick={startRegister} text='Get your Username'/>
                 </div>
 
                 <div className={styles.signinWrapper}>
