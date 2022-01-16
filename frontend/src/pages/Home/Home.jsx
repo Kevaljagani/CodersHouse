@@ -16,7 +16,7 @@ const Home = () => {
 
 const history = useHistory();
 function startRegister() {
-    history.push('/register');
+    history.push('/authenticate');
 }
 
     return (
@@ -29,13 +29,13 @@ function startRegister() {
                 </p>
 
                 <div>
-                    <Button onClick={startRegister} text='Get your Username'/>
+                    <Button onClick={startRegister} text="Let's Go"/>
                 </div>
 
                 <div className={styles.signinWrapper}>
-                    <span className={styles.hasInvite}>Have an invite text?</span>
-                    <Link style={signInLinkStyle} to='/login'>Sign In</Link>
+                    {/* <span className={styles.hasInvite}>Have an invite text?</span> */} 
                 </div>
+                
             </Card>
         </div>
     )
@@ -45,4 +45,3 @@ export default Home
 
 
 
-// 1:22:10
