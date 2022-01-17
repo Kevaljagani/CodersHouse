@@ -7,6 +7,8 @@ const steps = {
     2: stepOtp,
 }
 
+
+
 const Authenticate = () => {
 
     const [step, setStep] = useState(1);
@@ -24,3 +26,8 @@ const Authenticate = () => {
 }
 
 export default Authenticate;
+
+
+
+
+// 4) 1:39:00
