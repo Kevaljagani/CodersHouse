@@ -15,7 +15,7 @@ const Phone = ({ onNext }) => {
                     <Button text="Next" onClick={onNext} />   
                 </div>
                 <p className={style.bottomParagraph}>
-                    By entering your number, you are agreeing to out Terms of Service and Privacy Policy. Thanks !
+                    By entering your number you are agreeing to out Terms of Service and Privacy Policy. Thanks !
                 </p>
             </div>
 
