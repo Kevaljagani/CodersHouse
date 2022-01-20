@@ -1,1 +1,6 @@
-// 4) 2:02:24
+POST http://localhost:5500/api/send-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone": "k"
+}
