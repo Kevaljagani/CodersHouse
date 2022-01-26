@@ -1,24 +1,11 @@
 .cardWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 6rem;
- }
-
-.buttonWrap {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
- }
-
-.actionButtonWrap {
-    margin-top: 40px;
+    composes: cardWrapper from '../../../App.module.css';
 }
 
 .bottomParagraph {
-    color: #c4c5c5;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
+    composes: bottomParagraph from '../StepPhoneEmail/StepPhoneEmail.module.css';
+}
+
+.actionButtonWrap {
+    composes: actionButtonWrap from '../StepPhoneEmail/StepPhoneEmail.module.css';
 }
