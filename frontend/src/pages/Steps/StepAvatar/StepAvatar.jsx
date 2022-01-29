@@ -4,7 +4,7 @@ import Button from '../../../components/shared/Button/Button'
 import styles from './StepAvatar.module.css'
 import {useSelector, useDispatch} from 'react-redux';
 import { setAvatar } from '../../../store/activateSlice';
-import activate from '../../../http';
+import { activate } from '../../../http';
 
 const StepAvatar = ({ onNext }) => {
     const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const StepAvatar = ({ onNext }) => {
 
     async function submit() {
         try {
-            const { data } = await activate({name, avatar });
+            const { data } = await activate({ name, avatar });
             console.log(data)
         } catch(err) {
             console.log(err)

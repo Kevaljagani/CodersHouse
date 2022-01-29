@@ -9,6 +9,9 @@ class UserService {
         const user = await UserModel.create(data);
         return user;
     }
+
+
+    async 
 }
 
 module.exports = new UserService();
